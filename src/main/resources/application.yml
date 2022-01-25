@@ -1,0 +1,34 @@
+server:
+  port: 9191
+#  ssl:
+#      enabled: true
+#     client-auth: need
+#      key-store: classpath:oauth-server-cert.jks
+#      key-store-password: India330$$
+#      keyStoreType: JKS
+#      keyStoreProvider: SUN
+#      keyAlias: oauth-server-cert
+#      trust-store: classpath:oauth-server-cert.jks
+#      trust-store-password: India330$$
+#      trust-store-type: JKS
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springsecurity
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    tomcat:
+#      test-while-idle: true
+#      validation-query: SELECT| 1
+#    initialization-mode: never
+#    platform: mysql
+#    jpa:
+#      properties:
+#        hibernate:
+#          dialect: org.hibernate.dialect.MySql5Dialect
+#        hibernate:
+#          nameing:
+#            physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+#            ddl-auto: validate
+            
+check-user-scopes: true
